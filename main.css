@@ -1,108 +1,180 @@
 
 body {
     font-family: 'comic sans ms', 'sans-serif';
-    margin: 10px 0px;
-/* Header Styles */
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-self: center;
-    height: 60px;
-    background-color: #FFD700;
-    padding: 20px 20px;
-}
-/* Menu Section (div)*/
-.menu{
-    font-family:'Courier New', Courier, monospace;
-    margin-right: 20px;
-}
-/* Menu Text styles(h2) (i think this can be made better)*/ 
-#menuText{ 
-    font-size: 20px;
-    color: #333333;
-    text-align: left;
+    margin: 0;
 }
 
-/* Profile Section */
-.profile{
+/* Header Styles */
+header{
     display: flex;
+    
     justify-content: space-between;
-    align-items: center;
-}
-.profile #profileText{
-    margin-left: 10px;
-    font-family:'comic sans ms', cursive, sans-serif;
-    font-size: 25px;
-    color: #333333;
-    text-align: left;
-}
-.profile .circle{
-    height: 50px;
-    width: 50px;
-    background-color: #555;
-    border-radius: 50%;
-    display: inline-block;
+    align-items: normal;
+
+    
+    background-color: #FFD700;
+    padding: 0.5vw 1vw;
+
+    /* Profile Section */
+    .profile{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    
+        #profileText{
+            font-family:'comic sans ms', cursive, sans-serif;
+            font-size: 30px;
+            color: #333333;
+            text-align: left;
+            margin-left: 10px;
+        }
+
+    /* Profile Picture Placeholder */
+        .circle{
+            
+            height: 3.5vw;
+            width: 3.5vw;
+            background-color: #555;
+            border-radius: 50%;
+            display: inline-block;
+        }
+    }
+    /* Menu Section (div)*/
+    .menu{
+        font-family:'Courier New', Courier, monospace;
+        margin-right: 1%;
+        align-self: center;
+    
+        #menuText{ 
+            font-size: 23px;
+            color: #333333;
+            text-align: right;
+        }
+    } 
 }
 
 /* Title and Subtitle Styles */
 .title{
     font-family:'comic sans ms', cursive, sans-serif;
     align-items:center;
-    padding-top: 150px;
+    align-self: center;
+    padding: 30vh 5vw;
+    margin-bottom: -3vh;
+    
+    #titleText{
+        font-family:'comic sans ms', cursive, sans-serif;
+        font-size: 50px;
+        color: #333333;
+        text-align: center;
+
+    }
+    
+    #subtitleText{
+        font-family:'comic sans ms', cursive, sans-serif;
+        font-size: 25px;
+        color: #333333;
+        text-align: center;
+
+    }
 }
 
-#titleText{
-    font-family:'comic sans ms', cursive, sans-serif;
-    font-size: 50px;
-    color: #333333;
-    text-align: center;
 
-}
-#subtitleText{
-    font-family:'comic sans ms', cursive, sans-serif;
-    font-size: 25px;
-    color: #333333;
-    text-align: center;
 
-}
+
+
+
+
+
 /* Content Section */
 .mainContent{
     background-color: bisque;
     font-family:'comic sans ms', cursive, sans-serif;
-    display: flex;
-    justify-content: space-between;
+    border: 2px solid #333333;
 
-    align-items:center;
-    padding: 50px 200px;
-    
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 20% 50% 30%;
+
+    justify-content: center;
+    align-items: normal;
+
+    margin: 0px 3vw;
+
+    /* Project Styles */
     .projects{
         background-color: aliceblue;
-        height : auto;
-        width: auto;
-        
+        padding: 0% 5%;
+        border-right: 3px solid #333333;
         h3 {
-            margin-left: 10px;     
+            font-size: 28px;
+            color: #333333;
+            text-align: left;   
         }
-        ul {
+        div {
+            height: 70%;
+            display: grid;
+            grid-template-rows: auto;
+            gap: 5px;
+            align-items: center;
             list-style-type: none;
             font-size: 20px;
             color: #333333;
             text-align: left;
+            li{
+                border-top: 3px dashed #333333;
+            }
+            
         }
     }
+
+    /* Experience Styles */
     .workExperience{
         background-color: antiquewhite;
-        font-size: 20px;
-        color: #333333;
-        text-align: left;
+        padding: 0% 5%;
+        border-right: 3px solid #333333;
+        h3{
+            font-size: 28px;
+            color: #333333;
+            text-align: left;
+        }
+        h4{
+            border-top: 3px dashed #333333;
+            font-size: 24px;
+            color: #333333;
+            text-align: left;
+        }
+        a{
+            font-size: 20px;
+            color: #333333;
+            text-align: left;
+        }
+
     }
+
+    /* Education Styles */
     .education{
         background-color: aquamarine;
+        padding: 0% 5%;
+        padding-bottom: 5%;
         font-size: 20px;
         color: #333333;
         text-align: left;
+        h3{
+            font-size: 28px;
+            color: #333333;
+            text-align: left;
+        }
+        p{
+            font-size: 20px;
+            color: #333333;
+            text-align: left;
+        }
+        ul{
+            font-size: 20px;
+            color: #333333;
+            text-align: left;
+            list-style-type: disc;
+        }
     }
 }
 
