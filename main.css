@@ -107,7 +107,7 @@ header{
     margin: 0px 3vw;
 
     /* Project Styles */
-    .projects{
+    #projects{
         background-color: aliceblue;
         padding: 0% 5%;
         border-right: 3px solid #333333;
@@ -220,6 +220,18 @@ footer{
     margin-top: 200px;
 }
 
+.contactTitle{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    font-family:'comic sans ms', cursive, sans-serif;
+    color: #333333;
+    margin: 50px 0px;
+    text-align: center;
+
+
+}
+
 /*logic for smartphones*/
 media-query{
     @media(max-width: 600px){
@@ -228,3 +240,4 @@ media-query{
         }
     }
 }
+
