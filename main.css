@@ -31,12 +31,18 @@ header{
 
     /* Profile Picture Placeholder */
         .circle{
-            
+            /*
             height: 3.5vw;
             width: 3.5vw;
-            background-color: #555;
             border-radius: 50%;
             display: inline-block;
+            */
+            img{
+                border-radius: 50%;
+                height: 3.5vw;
+                width: 3.5vw;
+                border: #c81400 4px solid;
+            }
         }
     }
     /* Menu Section (div)*/
